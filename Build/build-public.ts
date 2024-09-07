@@ -9,6 +9,7 @@ import type { TreeType, TreeTypeArray } from './lib/tree-dir';
 import { OUTPUT_MOCK_DIR, OUTPUT_MODULES_DIR, PUBLIC_DIR, ROOT_DIR } from './constants/dir';
 import { writeFile } from './lib/misc';
 import picocolors from 'picocolors';
+import { compareAndWriteFile } from './lib/create-file';
 
 const mockDir = path.join(ROOT_DIR, 'Mock');
 const modulesDir = path.join(ROOT_DIR, 'Modules');
@@ -41,6 +42,15 @@ export const buildPublic = task(require.main === module, __filename)(async (span
       copyDirContents(mockDir, OUTPUT_MOCK_DIR)
     ]);
   });
+
+  await compareAndWriteFile(
+    span,
+    [
+      '/*',
+      '  cloudflare-cdn-cache-control: public, max-age=60, stale-while-revalidate=10, stale-if-error=30'
+    ],
+    path.join(PUBLIC_DIR, '_headers')
+  );
 
   const html = await span
     .traceChild('generate index.html')
