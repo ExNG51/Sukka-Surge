@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "publisherVersion": 1,
+  "source": {
+    "repository": "ExNG51/Sukka-Surge",
+    "commit": "2ee066d7255db0ada982e37673ff4ad1e261634f",
+    "tree": "726446663357df17902963e3bc072767112d33c2"
+  },
+  "upstream": "SukkaW/Surge",
+  "rulePaths": [
+    "Source/non_ip/apple_cn.conf",
+    "Source/non_ip/reject-drop.conf",
+    "Source/non_ip/reject-no-drop.conf",
+    "Source/non_ip/reject.conf"
+  ],
+  "companionPaths": [
+    "LICENSE",
+    "README.md"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "blob": "0ad25db4bd1d86c452db3f9602ccdbe172438f52",
+      "bytes": 34523
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "blob": "b48a72e6d9699d45f1c8116f0d98787fc94e1889",
+      "bytes": 33880
+    },
+    {
+      "path": "Source/non_ip/apple_cn.conf",
+      "mode": "100644",
+      "blob": "b3c366ce5986b34b45b627280491d8c4c0d1ad7e",
+      "bytes": 468
+    },
+    {
+      "path": "Source/non_ip/reject-drop.conf",
+      "mode": "100644",
+      "blob": "01d4ec659d007d9d27b8f5dc1d25be664b5688ae",
+      "bytes": 1706
+    },
+    {
+      "path": "Source/non_ip/reject-no-drop.conf",
+      "mode": "100644",
+      "blob": "c7b589a4fb8b70998a947d32274655d3cc76f9b0",
+      "bytes": 1792
+    },
+    {
+      "path": "Source/non_ip/reject.conf",
+      "mode": "100644",
+      "blob": "d3996b7ccc07ffa9ae06af326773be0ad961e31a",
+      "bytes": 16689
+    }
+  ],
+  "selection": "Original source blobs selected without modification."
+}
