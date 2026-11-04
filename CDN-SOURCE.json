@@ -3,8 +3,8 @@
   "publisherVersion": 1,
   "source": {
     "repository": "ExNG51/Sukka-Surge",
-    "commit": "d46d9ca1a28e74f2a40f6c0bae93569f85c3aa75",
-    "tree": "e4bca401634c0e007678edbb6a25c9e6df8b6ad8"
+    "commit": "17833159009a1d9390bf0e80c8a47b391bb4dc9e",
+    "tree": "69cc1fbe9787e6d85897deb65a0cfd03f2b0b371"
   },
   "upstream": "SukkaW/Surge",
   "rulePaths": [
@@ -39,8 +39,8 @@
     {
       "path": "Source/non_ip/reject-drop.conf",
       "mode": "100644",
-      "blob": "3faf753a3390222107ce5eb9402b84ae3e743a9a",
-      "bytes": 1804
+      "blob": "d3ebd8c73d44eca3eae8950b9a925ab81d4be78e",
+      "bytes": 1837
     },
     {
       "path": "Source/non_ip/reject-no-drop.conf",
